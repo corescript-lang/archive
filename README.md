@@ -1,3 +1,6 @@
+For making a simple interpreter, see
+https://github.com/corescript-lang/explaination/blob/master/simpleinterpreter.md
+
 # Compiler
 First, "compile" the code. This should generate make sure indents are correct,
 and store info for where functions are declared.
