@@ -31,7 +31,7 @@ It could also compile to:
 ```
 
 # Interpreter
-Next, the interpreter. This should not go through each line and parse each one.
+Next, the interpreter. This should **not** go through each line and parse each one.
 It should be able to parse 2 different parts of code at the same time. This is done to
 be able to get return data from a function without moving the line it is called from.
 
