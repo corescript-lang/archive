@@ -1,3 +1,4 @@
+# Compiler
 First, "compile" the code. This should generate make sure indents are correct,
 and store info for where functions are declared.
 It also needs to put code in chunks. This should mainly be separated by the line's indents,
@@ -26,6 +27,7 @@ It could also compile to:
 ]
 ```
 
+# Interpreter
 Next, the interpreter. This should not go through each line and parse each one.
 It should be able to parse 2 different parts of code at the same time. This is done to
 be able to get return data from a function without moving the line it is called from.
@@ -49,3 +51,22 @@ to the main interpreter executing the 2nd line.
 By "main interpreter", that means the first set of code that is run in the program.
 More than one "interpreter" means that the `interpreter` function in Corescript is
 just being called again.
+
+# Concatenation
+A big part of the language is being able to parse raw strings, math equations, and being able to put them together. In classic Corescript, this would work like this:
+```
+input name = Jimmy
+print Hello, (name)
+```
+Of course, this could interpret enclosed words than aren't meant to be parsed. To avoid this, the interpreter would skip it if the requested varible is undefined. For example:
+```
+input name = Jimmy
+print Hello, (cheese)
+```
+Would print:
+```
+Hello, (cheese)
+```
+
+To avoid having this conflict altogether, an alternative method could use [] instead of (). This should be able to be easily configured, so I can change it to $$, {}, etc.
+
