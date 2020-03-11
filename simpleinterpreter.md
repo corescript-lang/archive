@@ -17,6 +17,7 @@ for line in code:
 ```
 Of course, a simple interpreter should have a lot more functionality than a print statement. 
 Using substring will cut the string from the beginning to where the string starts. This includes the space after print.
+This could also be parsed by splitting the line by spaces, and checking the first item.
 
 ## GOTO
 A goto function can be very useful. It allows the program to skip code, and tell the interpreter where to go.
