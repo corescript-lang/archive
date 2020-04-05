@@ -1,0 +1,14 @@
+// This is 1-10 in classic Corescript
+var a = 0
+
+:init
+not a = 10:plus
+if a = 10:kill
+
+:plus
+a++
+print (a)
+
+goto init
+:kill
+stop
