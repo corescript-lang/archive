@@ -29,6 +29,24 @@ It could also compile to:
 {"if name = Jim": ["print Hello"]}
 ]
 ```
+Functions on the other hand, are also formatted in the same way as 
+if/repeat statements, but they need to be called from anywhere in the program.
+
+So before running the code, functions are stored in memory, as an object or struct.
+
+```
+function doThing:
+	print Foo
+```
+
+{
+name: "doThing",
+code: [
+	"print Foo"
+]
+}
+
+Of course this will differ over implementations.
 
 # Interpreter
 Next, the interpreter. This should **not** go through each line and parse each one.
