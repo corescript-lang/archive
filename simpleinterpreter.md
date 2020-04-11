@@ -52,9 +52,9 @@ stop
 ```
 This can be compressed to be a lot smaller if you wish.
 ```
-var a=0
+var a = 0
 :plus
 a++
 print (a),
-not a=10:plus
+not a = 10:plus
 ```
