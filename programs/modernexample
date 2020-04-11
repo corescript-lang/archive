@@ -1,0 +1,14 @@
+// This is an array
+var names = ["Jim", "Bob"]
+var name = names[0]
+
+// This is a function
+function printNames:
+	loop names as name:
+		print name
+
+// This is a 10x10 hashtag cube
+repeat 10:
+	repeat 10:
+		print "#"
+	print "\n"
