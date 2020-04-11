@@ -24,4 +24,37 @@ A goto function can be very useful. It allows the program to skip code, and tell
 Although GOTO isn't the best way to write programs, it is the simplest.
 
 ## IF Statements
-If statements redirect the code to another line if true/false. 
+If statements redirect the code to another line if true/false.
+```
+if name = Jimmy:enter
+print I don't know you.
+stop
+:enter
+print Welcome!
+```
+
+## Examples:
+```
+// This is 1-10 in classic Corescript
+var a = 0
+
+:init
+not a = 10:plus
+if a = 10:kill
+
+:plus
+a++
+print (a)
+
+goto init
+:kill
+stop
+```
+This can be compressed to be a lot smaller if you wish.
+```
+var a=0
+:plus
+a++
+print (a),
+not a=10:plus
+```
