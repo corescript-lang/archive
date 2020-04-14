@@ -2,7 +2,7 @@ For making a simple interpreter, see
 https://github.com/corescript-lang/explaination/blob/master/simpleinterpreter.md
 
 # Compiler
-First, "compile" the code. This should generate make sure indents are correct,
+First, "sort" the code. This should generate make sure indents are correct,
 and store info for where functions are declared.
 It also needs to put code in chunks. This should mainly be separated by the line's indents,
 so functions and false if statements can be skipped easily.
@@ -15,14 +15,14 @@ var name = Jim
 if name = Jim
 	print Hello
 ```
-Should compile to:
+Should come out as:
 ```
 [
 "var name = Jim",
 ["if name = Jim", "print Hello"]
 ]
 ```
-It could also compile to:
+It could also come out as:
 ```
 [
 "var name = Jim",
