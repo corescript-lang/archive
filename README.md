@@ -72,21 +72,3 @@ to the main interpreter executing the 2nd line.
 By "main interpreter", that means the first set of code that is run in the program.
 More than one "interpreter" means that the `interpreter` function in Corescript is
 just being called again.
-
-# Concatenation
-A big part of the language is being able to parse raw strings, math equations, and being able to put them together. In classic Corescript, this would work like this:
-```
-input name = Jimmy
-print Hello, (name)
-```
-Of course, this could interpret enclosed words than aren't meant to be parsed. To avoid this, the interpreter would skip it if the requested varible is undefined. For example:
-```
-print Jacob, (my dad) is cool.
-```
-Would print:
-```
-Jacob, (my dad) is cool.
-```
-
-To avoid having this conflict altogether, an alternative method could use [] instead of (). This should be able to be easily configured, so I can change it to $$, {}, etc.
-
