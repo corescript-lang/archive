@@ -13,20 +13,20 @@ For example, this:
 ```
 var name = Jim
 if name = Jim
-	print Hello
+	print "Hello"
 ```
 Should come out as:
 ```
 [
 "var name = Jim",
-["if name = Jim", "print Hello"]
+["if name = Jim", 'print "Hello"']
 ]
 ```
 It could also come out as:
 ```
 [
 "var name = Jim",
-{"if name = Jim": ["print Hello"]}
+{"if name = Jim": ['print "Hello"'}
 ]
 ```
 Functions on the other hand, are also formatted in the same way as 
@@ -36,7 +36,7 @@ So before running the code, functions are stored in memory, as an object or stru
 
 ```
 function doThing:
-	print Foo
+	print "Foo"
 ```
 
 {
@@ -55,7 +55,7 @@ be able to get return data from a function without moving the line it is called 
 
 For example:
 ```
-print 2 + 1 is:
+print "2 + 1 is:"
 print (doThing 2)
 
 function doThing parameter
