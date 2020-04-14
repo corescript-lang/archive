@@ -1,6 +1,7 @@
 A Corescript interpreter can be very simple.
-Sadly, a basic interpreter only parses 1 line at a time.
+Sadly, this basic interpreter idea only parses 1 line at a time.
 This means no indents and no chunks of code.
+
 But a basic interpreter can help you practice your programming skills, and can
 be used in hobby operating systems.
 
@@ -15,6 +16,9 @@ for line in code:
   if line starts with print:
     print substring(6, line)
 ```
+Not all programming languages have a convienent `split` and `substring` function.
+See CorescriptC for a lower-level implementation.
+
 Of course, a simple interpreter should have a lot more functionality than a print statement. 
 Using substring will cut the string from the beginning to where the string starts. This includes the space after print.
 This could also be parsed by splitting the line by spaces, and checking the first item.
