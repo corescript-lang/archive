@@ -22,3 +22,8 @@ repeat 10:
 	repeat 10:
 		print "#"
 	print "\n"
+	
+# Functions such as print, var are reserved
+function print string:
+	print string
+# Output: Reserved function name
