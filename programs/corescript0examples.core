@@ -1,0 +1,37 @@
+print Count from 1-10:
+var i = 0
+:count
+if i = 10:kill1
+i++
+print (i)
+goto count
+:kill1
+
+
+print Fibonacci Sequence:
+var previous = 1
+var number = 0
+var temp = (blank)
+
+:fib
+if number > 50:kill2
+print (number)
+set temp = (add number previous)
+set previous = (number)
+set number = (temp)
+goto fib
+
+:kill2
+
+print Bottles of beer (Only 20)
+var beers = 99
+:top
+if beers = 79:kill3
+print (beers) bottles of beer on the wall
+print (beers) bottles of beer
+print Take one down, pass it around
+beers--
+print (beers) bottles of beer on the wall
+goto top
+:kill3
+
