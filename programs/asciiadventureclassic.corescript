@@ -1,4 +1,4 @@
-// RUN CODE ON https://corescript-lang.github.io/editor/archive/editor_v_10.html
+// RUN CODE ON https://corescript-lang.github.io/editor-legacy/archive/editor_v_10.html
 // Go to settings>enable advanced styles
 // And run this code (COPY `styles=on` to `goto 61` only)
 
